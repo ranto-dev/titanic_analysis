@@ -1,0 +1,30 @@
+.flex-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    width: 27%;
+    padding: 1.5rem;
+}
+
+.choice-radio-classe-container {
+    text-align: justify;
+    align-items: center;
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+/* footer */
+.footer {
+    margin-top: 3rem;
+    padding-top: 3rem;
+    color: white;
+    font-size: 1.03em;
+    text-align: center;
+    height: 22.2vh;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titanic | La question de vie ou de mort</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header mt-3">
+        <h2 class="text-center">Titanic, La question de vie ou de mort</h2>
+      </div>
+      <div class="banner">
+        <p class="text-center mt-3">
+          Vous etes prier d'avoir à vos coté du jus de papaye afin d'éviter un
+          evenement fatal après avoir jouer à ce jeu à la fois cool et tuant!!!!
+          😂😂 Non non non, en fait c'est un simple jeux de devinette qui prédit
+          si vous avez surveçu au naufrage du navire "Le Titanic" alors il ne
+          faut pas vous inquiétez quelque soit le résultat affiché 😂😂😂
+        </p>
+        <p class="text-center">
+          🤭 Imaginez que vous avez voyager à bord du Titanic. Lors du naufrage,
+          etes-vous sortie vivant ou non 🤭 <br />
+          <span class="text-primary">Avez-vous le courage de tester ?</span>
+        </p>
+      </div>
+      <div class="form container text-center">
+        <form>
+          <div class="flex-card-container">
+            <div class="card">
+              <label for="pclass"
+                >Si vous étiez à bord du titanic, dans quelle classe
+                prétendez-vous etre installé ? 🤤</label
+              ><br />
+              <div class="choice-radio-classe-container m-auto">
+                <input
+                  type="radio"
+                  name="classe"
+                  value="classe1"
+                  id="classe1"
+                /><label for="classe1">Première classe</label><br />
+                <input
+                  type="radio"
+                  name="classe"
+                  value="classe2"
+                  id="classe2"
+                /><label for="classe2">Deuxième classe</label><br />
+                <input
+                  type="radio"
+                  name="classe"
+                  value="classe3"
+                  id="classe3"
+                /><label for="classe3">Troisième classe</label>
+              </div>
+            </div>
+            <div class="card">
+              <label for="pclass"
+                >Dite-moi ! Quelle est ton genre? Un homme ou une femme ?
+                🫠</label
+              ><br />
+              <div class="choice-radio-classe-container m-auto">
+                <input
+                  type="radio"
+                  name="sexe"
+                  value="homme"
+                  id="homme"
+                  checked
+                /><label for="homme">Homme</label><br />
+                <input type="radio" name="sexe" value="femme" id="femme" checked/><label
+                  for="femme" 
+                  >Femme</label
+                ><br />
+              </div>
+            </div>
+            <div class="card">
+              <label for="pclass"
+                >Avez-vous la gentiellesse de me donner votre age svp ! 🫣 </label
+              ><br />
+              <div class="input-age-classe-container m-auto">
+                <input
+                  id="age"
+                  type="number"
+                  class="form-control"
+                  placeholder="Saisissez votre age ..."
+                />
+              </div>
+            </div>
+          </div>
+          <br />
+          <button id="toggle-form" class="btn btn-primary">
+            <i class="fa fa-check-circle-o"></i> Tester
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="bg-primary footer">
+      <div class="copyright">
+        Copyright <i class="fa fa-copyright"></i>
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All rights reserved | Designed and Building with 🤪 by Ranto
+        Andrianandraina
+      </div>
+    </div>
+    <script src="assets/javascript/script.js"></script>
+  </body>
+</html>

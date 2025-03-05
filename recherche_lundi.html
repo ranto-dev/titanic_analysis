@@ -1,0 +1,344 @@
+<!DOCTYPE html><html><head>
+      <title>recherche_lundi</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////home/rantodev/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.8.15/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<p>Pour analyser les relations entre les passagers à bord du Titanic, l'Analyse en Composantes Principales (ACP ou PCA en anglais) est une méthode idéale si l'on cherche à réduire la dimensionnalité de données multivariées tout en préservant autant d'information que possible. L'ACP peut être utilisée pour déterminer si des relations sous-jacentes existent dans les données des passagers du Titanic.</p>
+<h3 id="objectif">Objectif </h3>
+<p>L'objectif ici est de déterminer si l'ACP peut révéler des relations intéressantes entre différentes variables (comme l'âge, le sexe, la classe, le tarif, etc.) des passagers à bord du Titanic. Pour ce faire, nous allons suivre ces étapes en Python :</p>
+<ol>
+<li><strong>Chargement des données</strong> : Utiliser un dataset comme celui de <code>Titanic</code> disponible sur des plateformes comme Kaggle.</li>
+<li><strong>Préparation des données</strong> : Traitement des données manquantes, des variables catégorielles et des transformations nécessaires.</li>
+<li><strong>Application de l'ACP</strong> : Réduction de la dimensionnalité pour analyser les relations entre les variables.</li>
+<li><strong>Visualisation des résultats</strong> : Projeter les passagers dans un espace réduit (2D ou 3D) pour observer les groupes ou relations.</li>
+</ol>
+<h3 id="étape-1--charger-les-données">Étape 1 : Charger les données </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> pandas <span class="token keyword keyword-as">as</span> pd
+<span class="token keyword keyword-import">import</span> numpy <span class="token keyword keyword-as">as</span> np
+
+<span class="token comment"># Charger le jeu de données Titanic</span>
+data <span class="token operator">=</span> pd<span class="token punctuation">.</span>read_csv<span class="token punctuation">(</span><span class="token string">'titanic.csv'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Afficher les premières lignes</span>
+data<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><h3 id="étape-2--préparer-les-données">Étape 2 : Préparer les données </h3>
+<p>Avant d'appliquer l'ACP, il est important de traiter les données. Cela inclut la gestion des valeurs manquantes et la transformation des variables catégorielles.</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token comment"># Traitement des données manquantes</span>
+data <span class="token operator">=</span> data<span class="token punctuation">.</span>fillna<span class="token punctuation">(</span>data<span class="token punctuation">.</span>mean<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>  <span class="token comment"># Remplir les valeurs manquantes par la moyenne (pour les colonnes numériques)</span>
+
+<span class="token comment"># Transformation des variables catégorielles (exemple : 'Sex' et 'Embarked')</span>
+data<span class="token punctuation">[</span><span class="token string">'Sex'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'Sex'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'male'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+data<span class="token punctuation">[</span><span class="token string">'Embarked'</span><span class="token punctuation">]</span> <span class="token operator">=</span> data<span class="token punctuation">[</span><span class="token string">'Embarked'</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token builtin">map</span><span class="token punctuation">(</span><span class="token punctuation">{</span><span class="token string">'C'</span><span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string">'Q'</span><span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token string">'S'</span><span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Sélectionner les colonnes pertinentes pour l'ACP</span>
+features <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Pclass'</span><span class="token punctuation">,</span> <span class="token string">'Sex'</span><span class="token punctuation">,</span> <span class="token string">'Age'</span><span class="token punctuation">,</span> <span class="token string">'SibSp'</span><span class="token punctuation">,</span> <span class="token string">'Parch'</span><span class="token punctuation">,</span> <span class="token string">'Fare'</span><span class="token punctuation">,</span> <span class="token string">'Embarked'</span><span class="token punctuation">]</span>
+
+<span class="token comment"># Normalisation des données avant l'ACP</span>
+<span class="token keyword keyword-from">from</span> sklearn<span class="token punctuation">.</span>preprocessing <span class="token keyword keyword-import">import</span> StandardScaler
+scaler <span class="token operator">=</span> StandardScaler<span class="token punctuation">(</span><span class="token punctuation">)</span>
+data_scaled <span class="token operator">=</span> scaler<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>data<span class="token punctuation">[</span>features<span class="token punctuation">]</span><span class="token punctuation">.</span>dropna<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><h3 id="étape-3--appliquer-lacp">Étape 3 : Appliquer l'ACP </h3>
+<p>Maintenant que les données sont prêtes, nous pouvons appliquer l'ACP pour réduire la dimensionnalité et analyser les relations entre les variables.</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-from">from</span> sklearn<span class="token punctuation">.</span>decomposition <span class="token keyword keyword-import">import</span> PCA
+
+<span class="token comment"># Appliquer l'ACP</span>
+pca <span class="token operator">=</span> PCA<span class="token punctuation">(</span>n_components<span class="token operator">=</span><span class="token number">2</span><span class="token punctuation">)</span>  <span class="token comment"># Réduire les données à 2 dimensions</span>
+pca_result <span class="token operator">=</span> pca<span class="token punctuation">.</span>fit_transform<span class="token punctuation">(</span>data_scaled<span class="token punctuation">)</span>
+
+<span class="token comment"># Visualiser la variance expliquée par chaque composante</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Variance expliquée par la première composante : </span><span class="token interpolation"><span class="token punctuation">{</span>pca<span class="token punctuation">.</span>explained_variance_ratio_<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token format-spec">.2f</span><span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Variance expliquée par la deuxième composante : </span><span class="token interpolation"><span class="token punctuation">{</span>pca<span class="token punctuation">.</span>explained_variance_ratio_<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span><span class="token format-spec">.2f</span><span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+</code></pre><h3 id="étape-4--visualiser-les-résultats">Étape 4 : Visualiser les résultats </h3>
+<p>Nous pouvons maintenant visualiser les résultats de l'ACP dans un espace réduit à deux dimensions (2D) pour observer d'éventuelles relations entre les passagers.</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+<span class="token comment"># Créer un DataFrame pour les résultats PCA</span>
+pca_df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>pca_result<span class="token punctuation">,</span> columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'PC1'</span><span class="token punctuation">,</span> <span class="token string">'PC2'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Visualisation</span>
+plt<span class="token punctuation">.</span>figure<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>pca_df<span class="token punctuation">[</span><span class="token string">'PC1'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> pca_df<span class="token punctuation">[</span><span class="token string">'PC2'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> c<span class="token operator">=</span>data<span class="token punctuation">[</span><span class="token string">'Survived'</span><span class="token punctuation">]</span><span class="token punctuation">,</span> cmap<span class="token operator">=</span><span class="token string">'viridis'</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.6</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Projection des passagers du Titanic dans l\'espace PCA'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Première composante principale'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Deuxième composante principale'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>colorbar<span class="token punctuation">(</span>label<span class="token operator">=</span><span class="token string">'Survécu (0 = non, 1 = oui)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><h3 id="conclusion">Conclusion </h3>
+<ul>
+<li><strong>Analyse des résultats</strong> : Vous pouvez examiner les composants principaux et la variance expliquée par chaque composante. Si les passagers sont bien séparés selon les composants principaux, cela pourrait indiquer qu'il existe une structure ou une relation sous-jacente intéressante dans les données.</li>
+<li><strong>Visualisation</strong> : Les points colorés dans la visualisation montrent la relation entre la survie (variable cible) et les autres caractéristiques des passagers. Si des clusters apparaissent, cela pourrait suggérer des facteurs qui influencent la survie (par exemple, les passagers de première classe qui ont survécu).</li>
+</ul>
+<p>En résumé, l'ACP est un excellent outil pour identifier des relations latentes dans des ensembles de données multivariées comme celle des passagers du Titanic. L'analyse visuelle peut vous aider à mieux comprendre les groupes et les tendances dans les données.</p>
+<hr>
+<p>Pour créer une animation de la projection des passagers du Titanic dans un espace réduit à deux dimensions, on peut utiliser la bibliothèque <code>matplotlib.animation</code> en Python. L'animation peut, par exemple, animer la couleur des points en fonction de la survie des passagers.</p>
+<p>Voici un exemple pour animer la visualisation des résultats de l'ACP, avec une légère animation qui pourrait montrer le passage d'un état à un autre (par exemple, en modifiant les couleurs au fur et à mesure).</p>
+<h3 id="code-pour-lanimation">Code pour l'animation </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+<span class="token keyword keyword-import">import</span> numpy <span class="token keyword keyword-as">as</span> np
+<span class="token keyword keyword-from">from</span> matplotlib<span class="token punctuation">.</span>animation <span class="token keyword keyword-import">import</span> FuncAnimation
+
+<span class="token comment"># Créer une figure et des axes pour l'animation</span>
+fig<span class="token punctuation">,</span> ax <span class="token operator">=</span> plt<span class="token punctuation">.</span>subplots<span class="token punctuation">(</span>figsize<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Créer un DataFrame pour les résultats PCA</span>
+pca_df <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>pca_result<span class="token punctuation">,</span> columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'PC1'</span><span class="token punctuation">,</span> <span class="token string">'PC2'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Initialiser un scatter plot (sans points au départ)</span>
+scatter <span class="token operator">=</span> ax<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> c<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> cmap<span class="token operator">=</span><span class="token string">'viridis'</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.6</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Ajouter des labels et un titre</span>
+ax<span class="token punctuation">.</span>set_title<span class="token punctuation">(</span><span class="token string">'Projection des passagers du Titanic dans l\'espace PCA'</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>set_xlabel<span class="token punctuation">(</span><span class="token string">'Première composante principale'</span><span class="token punctuation">)</span>
+ax<span class="token punctuation">.</span>set_ylabel<span class="token punctuation">(</span><span class="token string">'Deuxième composante principale'</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Définir la fonction d'initialisation pour l'animation</span>
+<span class="token keyword keyword-def">def</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    scatter<span class="token punctuation">.</span>set_offsets<span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment"># Initialiser avec un graphique vide</span>
+    <span class="token keyword keyword-return">return</span> scatter<span class="token punctuation">,</span>
+
+<span class="token comment"># Fonction pour mettre à jour les points de l'animation</span>
+<span class="token keyword keyword-def">def</span> <span class="token function">update</span><span class="token punctuation">(</span>frame<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># Colorier les points en fonction de la survie, progressivement</span>
+    scatter<span class="token punctuation">.</span>set_offsets<span class="token punctuation">(</span>pca_df<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token string">'PC1'</span><span class="token punctuation">,</span> <span class="token string">'PC2'</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token punctuation">:</span>frame<span class="token punctuation">]</span><span class="token punctuation">)</span>  <span class="token comment"># Ajouter plus de points à chaque frame</span>
+    scatter<span class="token punctuation">.</span>set_array<span class="token punctuation">(</span>data<span class="token punctuation">[</span><span class="token string">'Survived'</span><span class="token punctuation">]</span><span class="token punctuation">.</span>iloc<span class="token punctuation">[</span><span class="token punctuation">:</span>frame<span class="token punctuation">]</span><span class="token punctuation">.</span>values<span class="token punctuation">)</span>  <span class="token comment"># Mettre à jour les couleurs</span>
+    <span class="token keyword keyword-return">return</span> scatter<span class="token punctuation">,</span>
+
+<span class="token comment"># Créer l'animation avec 100 frames (par exemple)</span>
+ani <span class="token operator">=</span> FuncAnimation<span class="token punctuation">(</span>fig<span class="token punctuation">,</span> update<span class="token punctuation">,</span> frames<span class="token operator">=</span><span class="token builtin">len</span><span class="token punctuation">(</span>pca_df<span class="token punctuation">)</span><span class="token punctuation">,</span> init_func<span class="token operator">=</span>init<span class="token punctuation">,</span> blit<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> interval<span class="token operator">=</span><span class="token number">30</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Afficher l'animation</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><h3 id="explication-du-code">Explication du Code </h3>
+<ol>
+<li><strong>Création de la figure</strong> : Nous utilisons <code>matplotlib</code> pour créer une figure et un axe sur lequel nous afficherons les résultats de l'ACP.</li>
+<li><strong>Initialisation du graphique</strong> : <code>scatter.set_offsets([])</code> initialise un graphique vide.</li>
+<li><strong>Mise à jour des points</strong> : La fonction <code>update(frame)</code> est appelée à chaque itération de l'animation pour afficher progressivement les points et changer leur couleur en fonction de la variable cible (ici <code>Survived</code>).</li>
+<li><strong>Animation avec <code>FuncAnimation</code></strong> : Nous utilisons la classe <code>FuncAnimation</code> de <code>matplotlib.animation</code> pour créer l'animation. La fonction <code>update</code> est appelée pour chaque frame.</li>
+</ol>
+<h3 id="remarque">Remarque </h3>
+<p>Assurez-vous que vous avez les bonnes bibliothèques installées (comme <code>matplotlib</code> et <code>numpy</code>). Pour afficher cette animation, vous devez exécuter le code dans un environnement supportant les animations (comme un notebook Jupyter ou un script Python avec un environnement graphique).</p>
+<p>Si vous souhaitez que l'animation ait un effet plus dynamique, vous pouvez ajuster la vitesse, les couleurs, ou l'ordre d'apparition des points.</p>
+<hr>
+<p>L'<strong>ANOVA</strong> (Analyse de la Variance) est une méthode statistique utilisée pour analyser les différences entre les moyennes de plusieurs groupes. Elle permet de tester l'hypothèse nulle selon laquelle les moyennes de tous les groupes sont égales. Cette méthode est particulièrement utile lorsqu'on veut comparer plus de deux groupes (par exemple, les résultats d'un test dans différentes écoles ou différents traitements dans un essai clinique).</p>
+<h3 id="1-anova-analyse-de-la-variance">1. <strong>ANOVA (Analyse de la Variance)</strong> </h3>
+<p>L'ANOVA est une extension du test t de Student, qui est utilisé pour comparer les moyennes de deux groupes. L'ANOVA, en revanche, est utilisée lorsque vous devez comparer les moyennes de <strong>plus de deux groupes</strong>.</p>
+<h4 id="objectif-de-lanova-">Objectif de l'ANOVA : </h4>
+<ul>
+<li>Tester si les moyennes de plusieurs groupes sont statistiquement différentes.</li>
+<li>Analyser la variation <strong>entre</strong> les groupes et <strong>à l'intérieur</strong> des groupes.</li>
+</ul>
+<h3 id="principe-"><strong>Principe</strong> : </h3>
+<p>L'ANOVA compare la variation totale des données (variation totale = variation entre les groupes + variation à l'intérieur des groupes) et détermine si la variation entre les groupes est suffisamment grande par rapport à la variation à l'intérieur des groupes pour conclure que les moyennes des groupes sont différentes.</p>
+<ul>
+<li><strong>H0 (hypothèse nulle)</strong> : Les moyennes des groupes sont égales.</li>
+<li><strong>H1 (hypothèse alternative)</strong> : Au moins une moyenne de groupe est différente.</li>
+</ul>
+<h3 id="anova-à-un-facteur-one-way-anova"><strong>ANOVA à un facteur (One-Way ANOVA)</strong> </h3>
+<p>C'est un cas particulier d'ANOVA où on teste l'effet d'un <strong>seul facteur</strong> sur les moyennes des groupes. C'est pourquoi elle est aussi appelée <strong>"ANOVA One-Way"</strong>.</p>
+<h4 id="exemple-">Exemple : </h4>
+<p>Supposons que vous souhaitiez tester l'impact de trois types de fertilisants (A, B et C) sur la croissance des plantes. Vous avez trois groupes (un pour chaque type de fertilisant) et vous voulez savoir s'il y a une différence significative dans la croissance des plantes entre les groupes.</p>
+<p>Dans ce cas, l'ANOVA à un facteur vous permettra de tester l'hypothèse suivante :</p>
+<ul>
+<li><strong>H0</strong> : La croissance moyenne des plantes est la même pour les trois types de fertilisants.</li>
+<li><strong>H1</strong> : Il y a une différence dans la croissance moyenne des plantes entre au moins deux des trois fertilisants.</li>
+</ul>
+<h3 id="comment-fonctionne-lanova-one-way-"><strong>Comment fonctionne l'ANOVA One-Way ?</strong> </h3>
+<ol>
+<li>
+<p><strong>Calcul de la variance totale</strong> : La variance totale des données est décomposée en deux parties :</p>
+<ul>
+<li><strong>Variation entre les groupes</strong> (variabilité entre les moyennes des groupes).</li>
+<li><strong>Variation intra-groupe</strong> (variabilité au sein de chaque groupe).</li>
+</ul>
+</li>
+<li>
+<p><strong>Calcul de la statistique F</strong> :<br>
+La statistique <strong>F</strong> est calculée en divisant la variance entre les groupes par la variance intra-groupe. Si cette statistique est élevée, cela suggère que les groupes sont plus différents les uns des autres qu'au sein des groupes eux-mêmes.</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><mtext>Variance&nbsp;entre&nbsp;les&nbsp;groupes</mtext><mtext>Variance&nbsp;intra-groupe</mtext></mfrac></mrow><annotation encoding="application/x-tex">F = \frac{\text{Variance entre les groupes}}{\text{Variance intra-groupe}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.2519em;vertical-align:-0.8804em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3714em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">Variance&nbsp;intra-groupe</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord text"><span class="mord">Variance&nbsp;entre&nbsp;les&nbsp;groupes</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>Interprétation de la statistique F</strong> :<br>
+Une statistique F élevée (et un <strong>p-value</strong> faible) indique que les moyennes des groupes sont probablement différentes. Si la statistique F est faible (et la p-value est grande), cela signifie que les moyennes des groupes sont probablement égales.</p>
+</li>
+</ol>
+<h3 id="exemple-de-calcul-avec-python-anova-one-way"><strong>Exemple de calcul avec Python (ANOVA One-Way)</strong> </h3>
+<p>Voici un exemple de code pour réaliser une ANOVA One-Way avec Python en utilisant la bibliothèque <code>scipy</code>.</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> scipy<span class="token punctuation">.</span>stats <span class="token keyword keyword-as">as</span> stats
+
+<span class="token comment"># Exemple de données</span>
+fertilisant_A <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">20</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">21</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">]</span>
+fertilisant_B <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">31</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">,</span> <span class="token number">29</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">]</span>
+fertilisant_C <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">24</span><span class="token punctuation">,</span> <span class="token number">23</span><span class="token punctuation">,</span> <span class="token number">26</span><span class="token punctuation">,</span> <span class="token number">25</span><span class="token punctuation">]</span>
+
+<span class="token comment"># Test ANOVA One-Way</span>
+f_stat<span class="token punctuation">,</span> p_value <span class="token operator">=</span> stats<span class="token punctuation">.</span>f_oneway<span class="token punctuation">(</span>fertilisant_A<span class="token punctuation">,</span> fertilisant_B<span class="token punctuation">,</span> fertilisant_C<span class="token punctuation">)</span>
+
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Statistique F : </span><span class="token interpolation"><span class="token punctuation">{</span>f_stat<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"p-value : </span><span class="token interpolation"><span class="token punctuation">{</span>p_value<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span>
+
+<span class="token comment"># Interprétation</span>
+<span class="token keyword keyword-if">if</span> p_value <span class="token operator">&lt;</span> <span class="token number">0.05</span><span class="token punctuation">:</span>
+    <span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">"Il y a une différence significative entre les groupes."</span><span class="token punctuation">)</span>
+<span class="token keyword keyword-else">else</span><span class="token punctuation">:</span>
+    <span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">"Il n'y a pas de différence significative entre les groupes."</span><span class="token punctuation">)</span>
+</code></pre><h3 id="résultat-de-lanova-">Résultat de l'ANOVA : </h3>
+<ul>
+<li>Si la <strong>p-value</strong> est inférieure à un seuil de signification (généralement 0.05), vous pouvez rejeter l'hypothèse nulle et conclure qu'il existe des différences significatives entre au moins deux groupes.</li>
+<li>Si la <strong>p-value</strong> est supérieure à 0.05, vous ne pouvez pas rejeter l'hypothèse nulle, ce qui signifie qu'il n'y a pas de différences significatives entre les groupes.</li>
+</ul>
+<h3 id="2-types-danova-supplémentaires">2. <strong>Types d'ANOVA supplémentaires</strong> </h3>
+<p>Il existe plusieurs variantes de l'ANOVA en fonction de la structure des données :</p>
+<ul>
+<li><strong>ANOVA à un facteur (One-Way ANOVA)</strong> : Comparaison d'un seul facteur entre plusieurs groupes.</li>
+<li><strong>ANOVA à deux facteurs (Two-Way ANOVA)</strong> : Permet de tester l'effet de deux facteurs (par exemple, l'effet de deux types de fertilisants et de deux types de sols sur la croissance des plantes).</li>
+<li><strong>ANOVA à mesures répétées</strong> : Utilisée lorsque les données sont collectées à plusieurs moments sur les mêmes sujets (par exemple, mesurer la croissance des plantes à différentes étapes du temps avec le même groupe de plantes).</li>
+</ul>
+<h3 id="conclusion-1">Conclusion </h3>
+<ul>
+<li><strong>ANOVA</strong> est une méthode pour comparer les moyennes de plusieurs groupes.</li>
+<li><strong>ANOVA One-Way</strong> est un cas particulier d'ANOVA dans lequel on teste un seul facteur (comme un traitement, une condition ou une caractéristique) entre plusieurs groupes.</li>
+<li>Si la p-value de l'ANOVA est inférieure à un seuil de signification (par exemple 0.05), vous pouvez conclure que les groupes sont statistiquement différents.</li>
+</ul>
+<p>Si vous avez d'autres questions ou souhaitez approfondir un aspect particulier de l'ANOVA, n'hésitez pas à demander !</p>
+<hr>
+<h2 id="tour-de-hanoi">Tour de hanoi </h2>
+<p>Voici un exemple de code Python pour résoudre le problème du <strong>Tour de Hanoi</strong> avec une interface utilisateur utilisant <strong>Flet</strong>. Ce projet implique à la fois une logique de résolution du problème (solution à l'aide de récursion) et une interface graphique pour interagir avec l'utilisateur.</p>
+<h3 id="prérequis">Prérequis </h3>
+<ol>
+<li><strong>Python 3.x</strong></li>
+<li><strong>Installation de Flet</strong> : Flet est une bibliothèque pour créer des applications interactives à l'aide de Python. Vous pouvez l'installer avec <code>pip</code> :<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>pip <span class="token function">install</span> flet
+</code></pre></li>
+</ol>
+<h3 id="structure-du-projet">Structure du projet </h3>
+<ol>
+<li><strong>Logique du Tour de Hanoi</strong> : Utilisation de la récursion pour déplacer les disques entre trois tiges.</li>
+<li><strong>Interface graphique avec Flet</strong> : Créer une interface simple pour montrer les tiges et les disques et suivre les étapes de la solution.</li>
+</ol>
+<h3 id="1-logique-de-résolution-du-problème-de-tour-de-hanoi">1. <strong>Logique de Résolution du Problème de Tour de Hanoi</strong> </h3>
+<p>La résolution du problème des tours de Hanoi se fait de manière récursive. L'idée de base est de déplacer tous les disques d'une tige source vers une tige destination, en utilisant une tige auxiliaire pour aider au déplacement. Le cas de base de cette récursion est lorsque le nombre de disques est 1.</p>
+<p>Voici une implémentation simple du problème avec une approche récursive.</p>
+<h3 id="2-interface-flet">2. <strong>Interface Flet</strong> </h3>
+<p>Flet nous permet de créer des interfaces graphiques en utilisant des composants simples. Nous allons afficher les trois tiges et les disques, et visualiser les étapes de résolution.</p>
+<h3 id="code-source">Code Source </h3>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> flet <span class="token keyword keyword-as">as</span> ft
+
+<span class="token comment"># Logique du Tour de Hanoi</span>
+<span class="token keyword keyword-def">def</span> <span class="token function">hanoi</span><span class="token punctuation">(</span>n<span class="token punctuation">,</span> source<span class="token punctuation">,</span> target<span class="token punctuation">,</span> auxiliary<span class="token punctuation">,</span> moves<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword keyword-if">if</span> n <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
+        moves<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">(</span>source<span class="token punctuation">,</span> target<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword keyword-else">else</span><span class="token punctuation">:</span>
+        hanoi<span class="token punctuation">(</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> source<span class="token punctuation">,</span> auxiliary<span class="token punctuation">,</span> target<span class="token punctuation">,</span> moves<span class="token punctuation">)</span>
+        moves<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">(</span>source<span class="token punctuation">,</span> target<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        hanoi<span class="token punctuation">(</span>n<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> auxiliary<span class="token punctuation">,</span> target<span class="token punctuation">,</span> source<span class="token punctuation">,</span> moves<span class="token punctuation">)</span>
+
+<span class="token comment"># Interface Flet</span>
+<span class="token keyword keyword-def">def</span> <span class="token function">main</span><span class="token punctuation">(</span>page<span class="token punctuation">:</span> ft<span class="token punctuation">.</span>Page<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token comment"># Configuration initiale des tiges et des disques</span>
+    num_disks <span class="token operator">=</span> <span class="token number">3</span>  <span class="token comment"># Nombre de disques (modifiez-le pour tester avec plus de disques)</span>
+    moves <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>  <span class="token comment"># Liste des mouvements pour la solution</span>
+    hanoi<span class="token punctuation">(</span>num_disks<span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> moves<span class="token punctuation">)</span>
+
+    <span class="token comment"># État initial des tiges</span>
+    rods <span class="token operator">=</span> <span class="token punctuation">{</span>
+        <span class="token string">'A'</span><span class="token punctuation">:</span> <span class="token builtin">list</span><span class="token punctuation">(</span><span class="token builtin">range</span><span class="token punctuation">(</span>num_disks<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  <span class="token comment"># Tige source avec les disques</span>
+        <span class="token string">'B'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># Tige auxiliaire vide</span>
+        <span class="token string">'C'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>  <span class="token comment"># Tige destination vide</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment"># Crée un affichage pour les tiges</span>
+    <span class="token keyword keyword-def">def</span> <span class="token function">create_rods_display</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword keyword-return">return</span> <span class="token punctuation">[</span>
+            ft<span class="token punctuation">.</span>Column<span class="token punctuation">(</span>
+                <span class="token punctuation">[</span>
+                    ft<span class="token punctuation">.</span>Row<span class="token punctuation">(</span><span class="token punctuation">[</span>ft<span class="token punctuation">.</span>Text<span class="token punctuation">(</span><span class="token string">"Rod "</span> <span class="token operator">+</span> rod<span class="token punctuation">)</span> <span class="token keyword keyword-for">for</span> rod <span class="token keyword keyword-in">in</span> <span class="token punctuation">[</span><span class="token string">"A"</span><span class="token punctuation">,</span> <span class="token string">"B"</span><span class="token punctuation">,</span> <span class="token string">"C"</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> alignment<span class="token operator">=</span>ft<span class="token punctuation">.</span>MainAxisAlignment<span class="token punctuation">.</span>CENTER<span class="token punctuation">)</span><span class="token punctuation">,</span>
+                    ft<span class="token punctuation">.</span>Row<span class="token punctuation">(</span><span class="token punctuation">[</span>
+                        ft<span class="token punctuation">.</span>Column<span class="token punctuation">(</span><span class="token punctuation">[</span>ft<span class="token punctuation">.</span>Text<span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">(</span>disk<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword keyword-for">for</span> disk <span class="token keyword keyword-in">in</span> rods<span class="token punctuation">[</span>rod<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> alignment<span class="token operator">=</span>ft<span class="token punctuation">.</span>MainAxisAlignment<span class="token punctuation">.</span>CENTER<span class="token punctuation">)</span>
+                    <span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword keyword-for">for</span> rod <span class="token keyword keyword-in">in</span> <span class="token punctuation">[</span><span class="token string">"A"</span><span class="token punctuation">,</span> <span class="token string">"B"</span><span class="token punctuation">,</span> <span class="token string">"C"</span><span class="token punctuation">]</span>
+                <span class="token punctuation">]</span><span class="token punctuation">,</span> alignment<span class="token operator">=</span>ft<span class="token punctuation">.</span>MainAxisAlignment<span class="token punctuation">.</span>CENTER
+            <span class="token punctuation">)</span>
+        <span class="token punctuation">]</span>
+
+    <span class="token comment"># Affichage de l'interface</span>
+    page<span class="token punctuation">.</span>add<span class="token punctuation">(</span>ft<span class="token punctuation">.</span>Column<span class="token punctuation">(</span><span class="token punctuation">[</span>
+        ft<span class="token punctuation">.</span>Text<span class="token punctuation">(</span><span class="token string">"Tour de Hanoi - Résolution"</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token operator">*</span>create_rods_display<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        ft<span class="token punctuation">.</span>ElevatedButton<span class="token punctuation">(</span><span class="token string">"Commencer"</span><span class="token punctuation">,</span> on_click<span class="token operator">=</span><span class="token keyword keyword-lambda">lambda</span> e<span class="token punctuation">:</span> start_game<span class="token punctuation">(</span>page<span class="token punctuation">,</span> moves<span class="token punctuation">,</span> rods<span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token comment"># Démarre la résolution du jeu</span>
+    <span class="token keyword keyword-def">def</span> <span class="token function">start_game</span><span class="token punctuation">(</span>page<span class="token punctuation">,</span> moves<span class="token punctuation">,</span> rods<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token comment"># Animer les déplacements des disques</span>
+        <span class="token keyword keyword-for">for</span> move <span class="token keyword keyword-in">in</span> moves<span class="token punctuation">:</span>
+            source<span class="token punctuation">,</span> target <span class="token operator">=</span> move
+            <span class="token comment"># Déplacer le disque de source à target</span>
+            disk <span class="token operator">=</span> rods<span class="token punctuation">[</span>source<span class="token punctuation">]</span><span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span>
+            rods<span class="token punctuation">[</span>target<span class="token punctuation">]</span><span class="token punctuation">.</span>append<span class="token punctuation">(</span>disk<span class="token punctuation">)</span>
+            page<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">)</span>  <span class="token comment"># Met à jour l'interface après chaque mouvement</span>
+            page<span class="token punctuation">.</span>add<span class="token punctuation">(</span>ft<span class="token punctuation">.</span>Text<span class="token punctuation">(</span><span class="token string-interpolation"><span class="token string">f"Déplacement du disque </span><span class="token interpolation"><span class="token punctuation">{</span>disk<span class="token punctuation">}</span></span><span class="token string"> de </span><span class="token interpolation"><span class="token punctuation">{</span>source<span class="token punctuation">}</span></span><span class="token string"> vers </span><span class="token interpolation"><span class="token punctuation">{</span>target<span class="token punctuation">}</span></span><span class="token string">"</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+            page<span class="token punctuation">.</span>update<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        page<span class="token punctuation">.</span>add<span class="token punctuation">(</span>ft<span class="token punctuation">.</span>Text<span class="token punctuation">(</span><span class="token string">"Résolution terminée !"</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+<span class="token comment"># Lancer l'application</span>
+ft<span class="token punctuation">.</span>app<span class="token punctuation">(</span>target<span class="token operator">=</span>main<span class="token punctuation">)</span>
+</code></pre><h3 id="explication-du-code-">Explication du Code : </h3>
+<ol>
+<li>
+<p><strong>Fonction <code>hanoi(n, source, target, auxiliary, moves)</code></strong> : Cette fonction résout le problème des tours de Hanoi de manière récursive et enregistre chaque mouvement dans la liste <code>moves</code>. Le principe est de déplacer un disque à la fois et de faire appel à la fonction récursivement pour réduire le nombre de disques.</p>
+</li>
+<li>
+<p><strong>Fonction <code>main(page)</code></strong> : C'est la fonction principale qui crée l'interface utilisateur à l'aide de Flet. Elle configure les trois tiges (<code>A</code>, <code>B</code>, <code>C</code>) et initie le problème avec un nombre fixe de disques (3 dans ce cas). Elle appelle également <code>start_game()</code> pour commencer l'animation des mouvements.</p>
+</li>
+<li>
+<p><strong>Fonction <code>start_game(page, moves, rods)</code></strong> : Cette fonction anime le mouvement des disques entre les tiges. Chaque mouvement est effectué, et l'interface est mise à jour pour refléter les changements dans l'état des tiges.</p>
+</li>
+<li>
+<p><strong>Interface Flet</strong> :</p>
+<ul>
+<li>Utilisation de <code>ft.Row</code> et <code>ft.Column</code> pour organiser les éléments de l'interface (textes, boutons, etc.).</li>
+<li>Un bouton "Commencer" lance la résolution du problème de Hanoi et affiche les étapes dans l'interface.</li>
+</ul>
+</li>
+</ol>
+<h3 id="3-lancer-le-code">3. <strong>Lancer le Code</strong> </h3>
+<p>Pour exécuter ce projet :</p>
+<ol>
+<li>Installez Flet avec <code>pip install flet</code>.</li>
+<li>Copiez le code dans un fichier Python, par exemple <code>hanoi.py</code>.</li>
+<li>Exécutez le fichier en utilisant Python :<pre data-role="codeBlock" data-info="bash" class="language-bash bash"><code>python hanoi.py
+</code></pre>Cela ouvrira une fenêtre avec l'interface graphique et animera la solution du problème des tours de Hanoi.</li>
+</ol>
+<h3 id="conclusion-2">Conclusion </h3>
+<p>Ce projet utilise <strong>Flet</strong> pour créer une interface interactive et visuelle qui résout le <strong>problème des tours de Hanoi</strong>. Vous pouvez ajuster le nombre de disques pour tester le programme avec différentes tailles de problèmes. L'animation de la solution montre comment les disques se déplacent entre les tiges.</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
