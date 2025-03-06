@@ -50,9 +50,9 @@ def predict(data: request_body):
         # Prédiction
     class_predict = round(loaded_model.predict(new_data)[0])
     if class_predict == 1:
-        prediction = "Pas mort"
+        prediction = 1
     else:
-        prediction  = "Mort"
+        prediction  = 0
 
     # Return la valeur du prédiction
     return {'prediction': prediction }

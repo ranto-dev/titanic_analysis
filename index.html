@@ -5,13 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Titanic | La question de vie ou de mort</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/sty
+    le.css" />
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" />
   </head>
   <body>
     <div class="container">
       <div class="header mt-3">
         <h2 class="text-center">Titanic, La question de vie ou de mort</h2>
+      </div>
+      <div id="modal" class="my-modal">
+        <div class="modal-content">
+          <div class="close-container p-2">
+            <button id="close_modal" class="btn">
+              <i class="fa fa-close"></i>
+            </button>
+          </div>
+          <div id="modal_body" class="modal-body"></div>
+        </div>
       </div>
       <div class="banner">
         <p class="text-center mt-3">
@@ -41,6 +52,7 @@
                   name="classe"
                   value="classe1"
                   id="classe1"
+                  checked
                 /><label for="classe1">Première classe</label><br />
                 <input
                   type="radio"
@@ -69,10 +81,12 @@
                   id="homme"
                   checked
                 /><label for="homme">Homme</label><br />
-                <input type="radio" name="sexe" value="femme" id="femme" checked/><label
-                  for="femme" 
-                  >Femme</label
-                ><br />
+                <input
+                  type="radio"
+                  name="sexe"
+                  value="femme"
+                  id="femme"
+                /><label for="femme">Femme</label><br />
               </div>
             </div>
             <div class="card">
@@ -84,7 +98,7 @@
                   id="age"
                   type="number"
                   class="form-control"
-                  placeholder="Saisissez votre age ..."
+                  placeholder="Saisissez votre age ici ..."
                 />
               </div>
             </div>
