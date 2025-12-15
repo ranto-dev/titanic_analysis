@@ -7,7 +7,7 @@ Ce dépôt présente une étude complète du jeu de données historique du Titan
 1. **Analyse Exploratoire des Données (EDA) :** Identifier les corrélations clés entre les caractéristiques des passagers (sexe, classe, âge, etc.) et leur taux de survie.
 2. **Modélisation Prédictive :** Développer et évaluer un modèle de Machine Learning capable de prédire si un passager a survécu à la catastrophe.
 
-## ⚙️ Technologies et Dépendances
+## Technologies et Dépendances
 
 Ce projet est développé en Python et nécessite les bibliothèques principales suivantes.
 
@@ -18,17 +18,6 @@ Ce projet est développé en Python et nécessite les bibliothèques principales
 | **Matplotlib**       | Visualisation des données.                |
 | **Scikit-learn**     | Modélisation Machine Learning.            |
 | **Jupyter Notebook** | Environnement d'exécution pour l'analyse. |
-
-## 🚀 Installation et Exécution
-
-Suivez ces étapes pour configurer et exécuter le projet localement.
-
-### 1. Cloner le Dépôt
-
-```bash
-git clone git@github.com:ranto-dev/titanic_analysis.git
-cd titanic-analysis
-```
 
 ## Auther
 
